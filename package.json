@@ -2,8 +2,9 @@
   "name": "fearless-trial-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rajlakkaraju2021/fearless-trial-project/issues"
   },
-  "homepage": "https://github.com/rajlakkaraju2021/fearless-trial-project#readme"
+  "homepage": "https://github.com/rajlakkaraju2021/fearless-trial-project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
