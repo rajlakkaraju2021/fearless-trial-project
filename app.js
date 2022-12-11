@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 // define the port to run the app on
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // create an array to hold the items
 let items = [];
@@ -57,6 +57,7 @@ app.route('/items')
     });
     res.send('All items have been deleted');
   });
+
 
 // start the app
 app.listen(port, () => console.log(`App listening on port ${port}!`));
